@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image.png" href="brand4.png">
+    <title>creatives</title>
+  <!-- Site Metas -->
+     <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" />
+   <link rel="stylesheet" href="responsive.css">
+    
+   <!----animate css--->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> 
+    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+
+ <!-----font awesome---->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--aos animation-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <!---owl carousel slider-->
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css">
+    </head>
+    <style>
+*,
+*:after,
+        *:before{
+            -webkit-box-sizing:border-box;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        :active,
+        :hover,
+        :focus{
+            outline: 0 !important;
+            outline-offset: 0;
+        }
+        
+        a,
+        a:hover{
+            text-decoration: none;
+        }
+        
+        ul,
+        ol{
+          margin: 0;
+            padding: 0;  
+        }
+       
+        html{
+            text-rendering: optimizeLegibility;
+             scroll-behavior: smooth;
+        }
+        body{
+            font-family: 'poppins', sans-serif;
+            font-size: 100%;
+            font-weight: 400;
+            overflow-x: hidden;
+        }
+        article, aside, figcaption, figure, footer, header, hgroup, main, nav, section{
+            overflow: hidden;
+        }
+        h1{
+            font-size: 4.5rem;
+            font-weight: 900;
+            margin-bottom: 2rem;
+            color:#eeebe4;
+            text-transform: capitalize;
+        }
+        h1 span{
+            color:aquamarine;
+        }
+        h2{
+            font-weight: 900;
+            padding: 1rem 0;
+            font-size: 3rem;
+            line-height: 1.2;
+            text-transform: capitalize;
+            color: #003366;
+        }
+        h4{
+            font-weight: 800;
+            padding: 1rem 0;
+            line-height: 1.2;
+            text-transform: capitalize;
+            color: #003366;
+        }
+        h5{
+            color:#eeebe4;
+            text-transform: uppercase;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        p{
+           font-size: 1rem;
+            color:#e2e2e2;
+            font-weight: 500;
+            line-height: 1.6;
+            font-family: 'montserrat', sans-serif;
+            margin-top: 1rem;
+            
+        }
+        .main-btn{
+            position: relative;
+            z-index: 2;
+            padding: 0.652rem 1.563rem;
+            background-color: #eeebe4;
+            border-radius: 0.25rem;
+            border: 0.063rem solid;
+            border-color:#eeebe4;
+            color: #003366;
+            font-weight: 500;
+            -webkit-transition: all .4s ease-out 0s;
+            -o-transition:all .4s ease-out 0s;
+            -moz-transition: all .4s ease-out 0s;
+        }
+        .main-btn:hover{
+          background-color: aquamarine;
+            color:#ffffff;
+            border-color:aquamarine;
+        }
+        .heading h5{
+            color: rgb(7, 175, 175);
+        }
+        .logh{
+            width: 50px;
+        }
+        /*
+        ==============================
+        HEADER DESIGN
+        ================================
+        */
+        
+        /* top header*/
+        .navbar.top{
+            position: relative;
+            z-index: 5;
+            height: 3.125rem;
+            padding: 0rem;
+            background-color:  #001a4d;
+            
+        }
+        .navbar.top ul li a{
+            font-size: 0.85rem;
+            font-weight: 400;
+            color:#eeebe4;
+            font-family: 'poppins', sans-serif;
+        }
+        .navbar.top ul li a:hover{
+            color: #a6a6a6;
+        }
+        
+        /* main navigation*/
+        .navigation-wrap{
+            position: fixed;
+            padding: 1rem 0;
+            width:100%;
+            top:3.125rem;
+            left:0;
+            z-index: 100;
+             -webkit-transition:all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+        }
+        .navigation-wrap .nav-item{
+            transition: all 200ms linear;
+            padding: 0 0.4375rem;
+        }
+        .navigation-wrap .nav-link{
+            font-size: 1rem;
+            font-weight: 500;
+            padding-top: 1rem;
+            font-family: 'montserrat', sans-serif;
+            text-transform: capitalize;
+            color:#ffffff;
+            
+        }
+        .navigation-wrap .nav-link.active,
+        .navigation-wrap .nav-link:hover{
+            color: #00e6b8;
+        }
+        
+        /* change styling onscroll*/
+        .navigation-wrap.scroll-on{
+            position: fixed;
+            top:0;
+            left:0;
+            width:100%;
+            background:  #002266;
+            box-shadow: 0 0.125rem 1.75rem 0 rgba(0,0,0,0.09);
+            transition: all .15s ease-in-out 0s;
+        }
+        
+        /*
+        ======================
+        top section
+        =====================
+        */
+        .top-wrapper{
+            background-image: url(bg3.jpg);
+            width:100%;
+            height:100vh;
+            background-size: cover;
+            background-position: center center;
+            opacity: 1;
+        }
+        .top-wrapper .left-wrapper{
+            padding-top: 7.25rem;
+            
+        }
+        .top-wrapper .left-wrapper h1{
+            width:79%; 
+        }
+        .top-wrapper .right-wrapper{
+            padding-top: 5rem;
+        }
+        .top-wrapper .right-wrapper img{
+            width:20rem;
+            height: auto;
+            
+        }
+        
+        
+      /*
+        =================
+        about section design
+        ===================
+        */
+        
+        .wrapper{
+            padding: 5rem 0;
+        }
+        
+        .about .about-img::before{
+            position: absolute;
+            content: '';
+            top:0;
+            left:0;
+            width:1.5rem;
+            height:27.5rem;
+            background: aquamarine;
+
+        }
+        
+        .about .about-img{
+            position: relative;
+            width:100%;
+            height:auto;
+            padding-left: 4rem;
+            
+        }
+        .about .right-wrapper{
+            padding-left: 4rem;
+        }
+        .about .right-wrapper h5{
+            color: #0edbb2;
+        }
+        .about .right-wrapper p{
+            color:#001a4d;
+        }
+        .about .right-wrapper .main-btn{
+            color:#ffff;
+            background:  #00cccc;
+            border-color:#00cccc; 
+        }
+        
+        .about .right-wrapper .main-btn:hover{
+            color:#ffff;
+            background: #00e6b8;
+            border-color: #00e6b8;
+        
+        }
+        
+        
+        /*
+        =================
+        Approach sec
+        ==================
+        */
+        
+        .approach{
+            background-color: #eeebe4;  
+        }
+        .approach-cards{
+            padding-top: 3.125rem;     
+        }
+        .approach-cards .card{
+            display: inline-block;
+            position: relative;
+            width:100%;
+            margin: 1.875rem 0;
+            border-radius: 0.375rem;
+            background: #ffffff;
+            border: none;
+            box-shadow: -0.2349rem 1.6711rem 2.6875rem 0 rgb(42 57 63 / 15%); 
+           transition: all 0.03s ease-in-out;
+        }
+        .approach-cards .card:hover{
+            -webkit-transform:translateY(-1.25rem);
+            transform: translateY(-1.25rem);
+            -ms-box-shadow: 0rem 0rem 2.4375rem 0.125 rgb(236, 236, 236, 1);
+            -o-box-shadow: 0rem 0rem 2.4375rem 0.125 rgb(236, 236, 236, 1);
+        }
+        
+        .approach-cards .card .card-image{
+            height: 50%;
+            position: relative;
+            overflow:hidden;
+            margin-left: 0.9375rem;
+            margin-right: 0.9375rem;
+            margin-top:1.875rem;
+            border-radius: 0.375rem;
+            box-shadow: 0 0.5625rem 1.875rem -0.625rem rgba(221, 218, 218, 0.5)
+                
+        }
+        
+        .approach-cards .card .content{
+            padding: 0.9375rem 1rem;
+            text-align: center;
+            
+        }
+        
+        .card-description{
+            color: #002266;
+            text-align: center;
+        }
+        
+        
+        /*
+        ====================
+        blog section
+        ====================
+        */
+        
+        .blog{
+            background: #ffffff;
+            box-shadow: 0 0 2.4375rem 0.125rem rgba(236, 236, 236, 1);
+        }
+         .slider-wrapper{
+             background:#eeebe4 ;
+         }
+         .blog .slider-wrapper .left-wrapper{
+             padding: 2rem;
+             text-align: right;
+         }
+         .blog .slider-wrapper .left-wrapper h5{
+            color: #0edbb2;
+         }
+         .blog .slider-wrapper .left-wrapper p{
+            color:rgb(139, 133, 133);
+         }
+         .blog .slider-wrapper .left-wrapper .main-btn{
+             background: #0edbb2;
+             color:#ffffff;
+         }
+         .blog-img{
+             overflow: hidden;
+         }
+         .blog-img img{
+             width:50rem;
+             height: 31.25rem;
+             object-fit: cover;
+             overflow: hidden;
+         }
+         .slider-wrapper .common{
+             width:calc(100% / 2 - 1.25rem);
+             height: auto;
+         }
+
+        
+        
+        /*
+        ============================
+        contact scetion
+        ================================
+        */
+        .contact {
+            background: #eeebe4 ;
+        }
+        .contact .our-con-info li i{
+            color: #002266;
+            font-size: 2rem;       
+        }
+        .contact .our-con-info li p a{
+            color: #002266;
+            font-size: 1rem;   
+        }
+        .contact .form-control{
+            height: 3.75rem;
+            padding: 0.375rem 1.1875rem;
+            border:none;
+            font-size: 1.1875rem;  
+            box-shadow: 0 0.1875rem 1.25rem 0 rgba(0 0 0 / 12%);
+        }
+        .contact .textarea{
+            width:100%;
+            border-radius: 0.25rem;
+            padding: 0.75rem 1.1875rem;
+            border:none;
+            font-size: 1.1875rem; 
+            margin-top: 0.3125rem;
+            box-shadow: 0 0.1875rem 1.25rem 0 rgba(0 0 0 / 12%);
+        }
+        .contact .main-btn{
+            background: #0edbb2;
+             padding: 1rem;
+        }
+        
+        /*
+        ===========================
+        footer des
+        ==========================*/
+        .copyright{
+            background: #001a4d;
+        }
+        .copyright p{
+            color:#eeebe4;
+        }
+        .copyright a{
+            color:#0edbb2;
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+       @media (max-width: 1030px){
+    
+    
+    /* top header */
+    
+    .navbar.top ul li a{
+        font-size: 0.7rem;
+    }
+    .main-btn{
+        position: relative;
+        z-index: 2;
+        padding: 0.525rem 1rem;
+        background: #d1e0e0;
+        font-weight: 500;
+        font-size: 0.857rem;
+        
+    }
+           .top-wrapper{
+               height: 100%;
+           }
+    /* top banner */
+    
+           .top-wrapper .left-wrapper{
+               padding-top: 6rem;
+               
+           }
+           .top-wrapper .left-wrapper h1{
+               width:100%;
+           }
+    /* about section*/
+    
+           .about .about-img::before{
+               height: 22.8125rem;
+           }  
+           .about  .right-wrapper{
+               padding-left: 1rem;
+           }
+           h2{
+               font-size: 2.9rem;
+           }
+           
+           
+           
+    /*our approach*/
+    
+    
+} 
+        
+        
+   
+        
+        
+        
+   
+@media(max-width: 991px){
+    
+    /*navigation*/
+    
+    .navigation-wrap .navbar-toggler{
+        margin-right: 35px;
+    }
+    
+   .navbar-toggler-icon{
+        color:#ffffff;
+    }
+    
+    /* top top wrapper*/
+    
+    .top-wrapper{
+        text-align: center;
+    }
+    
+    .top-wrapper .right-wrapper img{
+      width:15rem;  
+    }
+    
+    h1{
+        font-size: 2.8rem;
+    }
+    /*about section*/
+    
+     .about .about-img::before{
+               height: 30.5rem;
+           } 
+
+    
+    /*blog section*/
+    .slider-wrapper .common{
+        width:100%;
+    }
+    .slider-wrapper{
+        flex-direction: column-reverse;
+    }
+    .blog-img img{
+        height: 25rem;
+    }
+}
+
+     
+   
+        
+        
+        
+        
+        
+        
+        @media(max-width: 767px){
+            
+            /* custom css*/
+            
+            .mob-pb-0{
+                padding-bottom: 0px !important;
+            }
+            
+             .mob-pt-0{
+                padding-top: 0px !important;
+            }
+            
+           
+        
+        
+        
+        
+         
+            /* navigation*/
+            .navbar-collapse{
+                text-align: center;
+            }
+            
+            .navigation-wrap .nav-item{
+              padding-top: 1.25rem;  
+            }
+            
+            
+           .navigation-wrap .nav-link{
+                font-size: 1rem;
+                font-weight: 700;
+                justify-content: center;
+            }
+            
+            .navigation-wrap .navbar-toggler{
+                margin-right: 0px;
+                padding: 0;
+            }
+            .navigation-wrap .navbar-brand img{
+                max-width: 75%;
+            }
+            
+            .navigation-wrap{
+                position: fixed;
+                top:0;
+                left:0;
+                width:100%;
+                padding: 0.7rem;
+                -webkit-transition:all .15s ease-in-out 0s !important;
+                transition: all .15s ease-in-out 0s !important;
+            }
+            
+            
+            .top-wrapper .right-wrapper{
+                text-align: center;
+            }
+            .top-wrapper .right-wrapper img{
+                width: 50%;
+                margin: auto;
+            }
+            
+            /* btn desgn */
+            .main-btn,
+            .btn-2{
+                min-width: 11.25rem !important;
+                padding: 0.725rem 2rem !important;
+                font-size: 0.85rem;
+                margin-left: 0 !important;
+                margin-top: 2rem;
+                text-align: center;
+                align-items: center;
+            }
+            
+            /* top banner*/
+            
+            .top-wrapper .left-wrapper{
+                padding-top: 6.25rem;
+                 text-align: center;
+            }
+            
+            h1{
+                font-size: 2.5rem !important;
+            }
+            
+            h2{
+                font-size: 2rem !important;
+            }
+            
+            
+            /* about section*/
+            .about .about-img{
+                padding-left: 3rem;
+                padding-bottom: 3rem;
+            }
+            .about .about-img::before{
+                height: 15.5rem;
+            }
+            
+            
+            /* our approcah section*/
+            
+            
+            /*====blog====*/
+            .blog .slider-wrapper .left-wrapper{
+                text-align: center;
+            }
+            
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </style>
+    
+    <body>
+    
+        <!--header-->
+       <header id="header">
+           <!---top nav--->
+          <nav class="navbar navbar-expand top d-none d-lg-block d-md-block pt-md-2">
+           <div class="container header">
+              
+               
+               <!---navbar item [left] --->
+               <ul class="navbar-nav">
+               <li class="nav-item">
+                   <a href="#" class="nav-link smooth-anchor p1-0"><i class="fa fa-clock-o mr-2"></i>Opening hours: Mon - Sat - 7:00 AM - 10:00 PM</a>
+                   </li>
+               </ul>
+               
+               <div class="ml-auto"></div>
+               
+               <!---navbar item [right] --->
+                 <ul class="navbar-nav">
+               <li class="nav-item mr-3">
+                   <a href="#" class="nav-link"><i class="fa fa-phone mr-2"></i>+234-913-3503679</a>
+                   </li>
+                      <li class="nav-item mr-3">
+                   <a href="#" class="nav-link"><i class="fa fa-envelope-o mr-2"></i>@creatives.com</a>
+                   </li>
+               </ul>
+               
+               <!---nav icon--->
+               <ul class="navbar-nav icons">
+               <li class="nav-item social mr-3">
+                   <a href="#" class="nav-link"><i class="fa fa-facebook"></i></a>  
+                   </li>
+                     <li class="nav-item social mr-3">
+                   <a href="#" class="nav-link"><i class="fa fa-twitter"></i></a>  
+                   </li>
+                     <li class="nav-item social mr-3">
+                   <a href="#" class="nav-link pr-0"><i class="fa fa-linkedin"></i></a>  
+                   </li>
+               </ul>
+              </div>
+           </nav>
+           
+           <!---main header--->
+          <nav class="navbar navbar-expand-lg navigation-wrap">
+       <div class="container">
+              <a class="navbar-brand" href="#"><img src="brand4.png" class="logh"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+   <i class="fa fa-bars navbar-toggler-icon"></i>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" aria-current="page" href="#home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#approach">Our Approach</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#blog">Blog</a>
+      </li>
+         <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+ </div>
+ </nav>
+</header>
+    
+        
+        <!---section 1 banner--->
+        <section id="#home">
+           <div class="main-wrapper">
+            <div class="top-wrapper">
+               <div class="container">
+                <div class="row">
+                   <div class="col-lg-8 pr-lg-5 pr-md-5 pr-2 left-wrapper">
+                    <h5 class="py-4">Creatives inc.</h5>
+                       <h1 data-aos="zoom-in" data-aos-delay="800">Discover A Better <span>Version</span> of you.</h1>
+                       <p class="animated bounceInLeft" style="animation-delay: 1s">Do magna vidisse arbitror ita ex fugiat eiusmod praetermissum Officia duis elit. Dolor ipsum non velit. iudicem doctrina erit reprehenderitimitarentur e fug</p>
+                       <div class="mt-3">
+                       <a href="#contact" class="smooth-anchor main-btn animated bounceInLeft" style="animation-delay: 2s" >GET IN TOUCH</a>
+                       </div>
+                    </div>
+                    <div class="col-lg-4 right-wrapper">
+                        <div  data-aos="fade-left" data-aos-delay="800">
+                        <img src="removed.png" alt="Aureal" > 
+                        </div>
+                    </div>
+                   </div>
+                </div>
+               </div>
+            
+            </div>
+            
+            </section>  
+    
+        <!----section  1 banneer design-->
+        <section id="home">
+        
+        </section>
+        
+        
+        
+        
+          <div class="clearfix"></div>
+    
+    <!---SECTION 2 about design---->
+        <section id="about">
+        <div  class="wrapper about">
+            <div class="container">
+                <div class="row">
+                 <div class="col-lg-6 col-md-12 left-wrapper">
+                <div class="about-img position-relative" data-aos="zoom-in" data-aos-delay="800">
+                <img src="team2.jpg" class="img-fluid">
+                </div>
+                </div>
+                <div class="col-lg-6 col-md-12 pt-md-5 right-wrapper">
+                <div  data-aos="fade-left" data-aos-delay="800">
+                    <h5>About Creatives inc</h5>
+                    <h2>Unleash the creativity within you</h2>
+                    <p>Multos qui a esse ingeniis. Multos ne ingeniis o veniam, tempor quo duis, ubi malis eu malis, et irure possumus. Ipsum se arbitror, malis e do cillum admodum. Do velit sum se arbitror, malis e do cillum admodum. Do velit</p>
+                    <p>Culpa arbitror o exercitation. Aliquip aut aute mentitum, labore nescius quo doctrina e quorum do proident ad quo duis ex dolore. Excepteur eu labore singulis. Nisi eu</p>
+                    </div>
+                    <div class="mt-5">
+                    <a href="#contact" class="main-btn animated bounceInLeft" style="animation-delay: 3s">Learn more</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+      <div class="clearfix"></div>
+    
+    
+    <!-- approach -section --->
+        
+        <section id="approach">
+        <div class="wrapper approach">
+            <div class="container">
+            <div class="heading text-center">
+              <h5>Approach</h5> 
+                <h2>Our Personalized Approach</h2>
+                </div>
+                <div class="approach-cards">
+                <div class="container">
+                    <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card" data-aos="zoom-in" data-aos-delay="800">
+                        <div class="card-image">
+                            <a href="#"><img src="couzil.jpg" class="img-fluid"></a>
+                            </div>
+                            <div class="content">
+                            <h4>Weekly One-on-One Coaching and Virtual Support as Needed </h4>
+                                <p class="card-description">Aut ita sempiternum, aut non nisi varias summis. Aliquip labore legam de malis. Possumus esse summis litteris aute a voluptate ea ipsum, est</p>
+                            </div>
+                        </div>
+                        </div>
+                        
+                         <div class="col-md-6 col-lg-4">
+                        <div class="card" data-aos="fade-down" data-aos-delay="800">
+                        <div class="card-image">
+                            <a href="#"><img src="digi.jpg" class="img-fluid"></a>
+                            </div>
+                            <div class="content">
+                            <h4>Unlimited Access to Exclusive Digital Content</h4>
+                                <p class="card-description">Sunts qui a esse ingeniis. Multos ne ingeniis o veniam, tempor quo duis, ubi malis incididunt et instituendarum in dolor fabulas graviterque. Aut si</p>
+                            </div>
+                        </div>
+                           </div>
+                        
+                         <div class="col-md-6 col-lg-4">
+                        <div class="card" data-aos="zoom-in" data-aos-delay="800">
+                        <div class="card-image">
+                            <a href="#"><img src="prof.jpg" class="img-fluid"></a>
+                            </div>
+                            <div class="content">
+                            <h4>Membership To A Community Of  Proffessional Women </h4>
+                                <p class="card-description">unt et is qui a esse ingeniis. Multos ne ingeniis o veniam, tempor quo duis, ubi malisnstituendarum in dolor fabulas graviterque. Aut si quorum quibusdam.</p>
+                            </div>
+                        </div>
+                           </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        
+        <div class="clearfix"></div>
+        
+        
+        <!---section-4 blog section--->
+        
+        <section id="blog">
+        <div class="wrapper">
+            <div class="container">
+            <div class="heading text-center">
+                <h5>Blog</h5>
+                <h2>Stay In The Know</h2>
+                </div>  
+            </div>
+            <div class="container blog p-lg-5 p-md-5 mt-5" data-aos="zoom-in" data-aos-delay="800">
+            <div class="blog-slider owl-carousel owl-theme">
+                <div class="item">
+                <div class="slider-wrapper d-flex align-items-center justify-content-between flex-wrap">
+                   <div class="common left-wrapper">
+                    <h5>January 3, 2021</h5>
+                    <h2>Change The Way You Think</h2>
+                       <p>Sed probant comprehenderit id ea id esse duis cillum, commodo veniam sunt o 
+                           multos qui hic quae sunt sed appellat...</p>
+                       <button class="main-btn">Read More</button>
+                    </div>
+                    <div class="common">
+                    <div class="blog-img">
+                        <img src="book6.jpg" class="img-fluid">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                
+                
+                <div class="item">
+                <div class="slider-wrapper d-flex align-items-center justify-content-between flex-wrap">
+                   <div class="common left-wrapper">
+                    <h5>January 3, 2021</h5>
+                    <h2>3 Steps to Overcome Your Limiting Beliefs</h2>
+                       <p>Sunts qui a esse ingeniis. Multos ne ingeniis o veniam, tempor quo duis, ubi...</p>
+                       <button class="main-btn">Read More</button>
+                    </div>
+                    <div class="common">
+                    <div class="blog-img">
+                        <img src="book2.jpg" class="img-fluid">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                
+                 <div class="item">
+                <div class="slider-wrapper d-flex align-items-center justify-content-between flex-wrap">
+                   <div class="common left-wrapper">
+                    <h5>January 3, 2021</h5>
+                    <h2>The Psychology Of Money</h2>
+                       <p>Multos qui a esse ingeniis. Multos ne ingeniis o veniam, tempor quo dui ne ingeniis o veniam...</p>
+                       <button class="main-btn">Read More</button>
+                    </div>
+                    <div class="common">
+                    <div class="blog-img">
+                        <img src="book3.jpg" class="img-fluid">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                
+                 <div class="item">
+                <div class="slider-wrapper d-flex align-items-center justify-content-between flex-wrap">
+                   <div class="common left-wrapper">
+                    <h5>January 3, 2021</h5>
+                    <h2>The Science Of Photograpy</h2>
+                       <p>Multos qui a esse ingeniis. Multos ne ingeniis o veniam, tempor quo dui ne ingeniis o veniam...</p>
+                       <button class="main-btn">Read More</button>
+                    </div>
+                    <div class="common">
+                    <div class="blog-img">
+                        <img src="book4.jpg" class="img-fluid">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+            </div>
+        </section>
+        
+        <div class="clearfix"></div>
+        
+        
+        <!-----section 5 contact-->
+        <section id="contact">
+        <div class="wrapper contact">
+        <div class="container">
+            <div class="heading text-center ">
+                <h5>Lets Start a Conversation</h5>
+                 <h2>Get In Touch</h2>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-5">
+                      <h4>Contact Info</h4>  
+                      <ul class="our-con-info list-unstyled" data-aos="fade-down-right" data-aos-delay="900">
+                          <li class="d-flex align-items-center">
+                              <i class="pr-3 fa fa-map-marker"></i>
+                              <p><a href="">Loremae ex  unde dicta minima. Voluptate, nulla!</a></p>
+                          </li>
+                          <li class="d-flex align-items-center">
+                              <i class="pr-3 fa fa-phone"></i>
+                              <p><a href="">+234-913-3503679</a></p>
+                          </li>
+                          <li class="d-flex align-items-center">
+                            <i class="pr-3 fa fa-envelope-o"></i>
+                            <p><a href="">@creatives.com</a></p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-7 col-md-7 pt-lg-0 pt-md-0 pt-4" data-aos="flip-right" data-aos-delay="900">
+                     <form>
+                         <div class="row">
+                             <div class="col-md-6">
+                                 <div class="form-group">
+                                     <input type="text" class="form-control" name="name" id="name" placeholder="Your name" required>
+                                 </div>
+                             </div>
+                             <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Email Address" required>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                   <textarea class="textarea" name="message" cols="30" rows="4" id="message" placeholder="Enter your Message"  required></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                               <a href=""> <button class="main-btn"><i class="fa fa-paper-plane pr-3"></i>Send Message</button></a>
+                            </div>
+                         </div>
+                     </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </section>
+        <div class="clearfix"></div>
+        
+        
+        <!----section 6 footer-->
+        <footer>
+            <section>
+            <div  class="p-3 copyright" id="copyright">
+               <div class="container" >
+                 <div class="row align-items-center">
+                    <div class="col-12 col-md-6 p-3 text-center text-lg-left mob-pb-0" >
+                        <p classs="my-0">copyright &copy; 2021 <a href="#">Creatives</a> | All Rights Resreved</p>
+                    </div>
+                    <div class="col-12 col-md-6 p-3 text-center text-lg-right" mob-pt-0>
+                        <p>Designed by<a href="" target=" _blank"> LarryAustin</a> </p>
+                    </div>
+                 </div>  
+               </div>
+            </div>
+            </section>
+        </footer>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    
+    
+    
+    
+    <!--js libraries-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    
+    
+    
+    
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+        
+        <script src="OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+        
+        
+        <script>
+        $(function(){
+            $(window).on('scroll', function(){
+                if($(window).scrollTop() > 10){
+                    $('.navigation-wrap').addClass('scroll-on');
+                }else{
+                   $('.navigation-wrap').removeClass('scroll-on'); 
+                }
+            })
+        })
+        
+        $(function(){
+            $('.navbar-toggler').on('click', function(){
+              $('.navigation-wrap').addClass('scroll-on');  
+            })
+        })
+        
+        //nav hide
+        $('nav-link').on('click', function(){
+            $('.navbar-collapse').collapse('hide'); 
+        })
+        
+
+      
+            
+            AOS.init({
+        // disable: 'mobile'
+    });
+        
+            
+            
+  // owl carousel
+            
+$('.blog-slider').owlCarousel({
+    loop:true,
+    margin:0,
+    autoplay:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        767:{
+            items:1
+        },
+        1366:{
+            items:1
+        }
+    }
+})
+        </script>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          <script>
+    
+  </script>
+
+        
+
+        
+        
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    </body>
